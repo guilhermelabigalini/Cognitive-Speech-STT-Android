@@ -2,14 +2,18 @@
 buildscript {
     repositories {
         mavenCentral()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 
     ext {
-        compileSdkVersion = 22
-        buildToolsVersion = "25.0.3"
+        compileSdkVersion = 26
+        buildToolsVersion = "26.0.2"
     }
+}
+repositories {
+    google()
 }

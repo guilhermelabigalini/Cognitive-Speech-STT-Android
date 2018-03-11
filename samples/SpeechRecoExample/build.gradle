@@ -13,14 +13,17 @@ dependencies {
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+    flavorDimensions "x86","arm"
 
     productFlavors {
         x86 {
+            dimension "x86"
             ndk {
                 abiFilter "x86"
             }
         }
         arm {
+            dimension "arm"
             ndk {
                 abiFilters "armeabi"
             }
